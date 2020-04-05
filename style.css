@@ -283,6 +283,7 @@ body {
 }
 
 .week1 {
+  padding: 2vh 0;
   z-index: 1;
   grid-column: 2;
   grid-row: 1;
@@ -303,6 +304,7 @@ body {
 }
 
 .week2 {
+  padding: 2vh 0;
   z-index: 0;
   grid-column: 1;
   grid-row: 2;
@@ -323,6 +325,7 @@ body {
 }
 
 .week3 {
+  padding: 2vh 0;
   z-index: 1;
   grid-column: 2;
   grid-row: 3;
@@ -343,6 +346,7 @@ body {
 }
 
 .week4 {
+  padding: 2vh 0;
   z-index: 1;
   grid-column: 3;
   grid-row: 4;
@@ -364,6 +368,7 @@ body {
 }
 
 .week5 {
+  padding: 2vh 0;
   z-index: 1;
   grid-column: 1;
   grid-row: 4;
@@ -384,6 +389,7 @@ body {
 }
 
 .week6 {
+  padding: 2vh 0;
   z-index: 1;
   grid-column: 2;
   grid-row: 5;
@@ -404,6 +410,7 @@ body {
 }
 
 .week7 {
+  padding: 2vh 0;
   z-index: 1;
   grid-column: 3;
   grid-row: 6;
@@ -424,6 +431,7 @@ body {
   background-color: rgb(87, 155, 87);
   grid-column: 1;
   grid-row: 5 / 7;
+  line-height: 8vh;
 }
 
 .wtitle {
