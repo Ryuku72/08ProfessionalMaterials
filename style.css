@@ -428,15 +428,15 @@ body {
 
 .wtitle {
   font-family: 'Permanent Marker', cursive;
-  font-size: 2.5em;
+  font-size: 2.5rem;
 }
 
 .description {
   font-family: monospace;
-  font-size: 1.5em;
+  font-size: 2rem;
 }
 .commit{
-  font-size: 2em;
+  font-size: 1.5rem;
 }
 
 #section-container button {
