@@ -254,6 +254,7 @@ body {
   grid-gap: 10px;
   grid-auto-flow: dense;
   background-color: skyblue;
+  border-top: 10px solid skyblue;
   z-index: 0;
 }
 
@@ -493,4 +494,10 @@ footer p {
 
 .fa:hover {
   opacity: 0.7;
+  background-color: orange;
+}
+
+#section-container button:hover {
+  opacity: 0.7;
+  background-color: rgb(97, 162, 97);
 }
