@@ -194,23 +194,24 @@ body {
   bottom: -4%;
   right: 28%;
   background-color: rgb(147, 88, 0);
-  clip-path: polygon(48% 1%, 0 65%, 18% 66%, 20% 100%, 40% 100%, 39% 80%, 53% 78%, 53% 100%, 72% 97%, 87% 100%, 87% 69%, 100% 67%, 85% 42%, 91% 26%, 79% 15%, 73% 26%);
+  clip-path: polygon(48% 1%, 0 65%, 18% 66%, 20% 100%, 40% 100%, 39% 80%, 53% 78%, 53% 100%, 72% 100%, 87% 100%, 87% 69%, 100% 67%, 85% 42%, 91% 26%, 79% 15%, 73% 26%);
   animation: house 2s forwards;
   animation-delay: 8s;
   opacity: 0;
+  border-bottom: rgb(18, 52, 18) double 1vh;
 }
 
 
 .smoke {
   z-index: 6;
   position: absolute;
-  width: 8vh;
-  height: 20vh;
-  bottom: 4%;
-  right: 27%;
+  width: 15vh;
+  height: 30vh;
+  bottom: 6%;
+  right: 24.6%;
   background-color: grey;
   clip-path: polygon(48% 5%, 49% 43%, 57% 61%, 45% 90%, 25% 100%, 43% 69%, 24% 61%);
-  animation: smoke 6s infinite;
+  animation: smoke 16s infinite;
   animation-delay: 12s;
   opacity: 0;
 }
@@ -308,12 +309,12 @@ body {
 }
 
 @keyframes smoke {
-  0% {clip-path: polygon(71% 18%, 51% 60%, 62% 80%, 46% 100%, 36% 100%, 46% 83%, 32% 49%); opacity: 30%}
-20%{clip-path: polygon(23% 18%, 61% 43%, 62% 70%, 46% 100%, 36% 100%, 46% 83%, 37% 48%); opacity: 50%}
-40% {clip-path: polygon(64% 19%, 51% 59%, 62% 70%, 41% 100%, 34% 76%, 15% 69%, 33% 50%);opacity: 80%}
-60% {clip-path: polygon(36% 19%, 63% 45%, 62% 70%, 48% 99%, 34% 76%, 49% 66%, 41% 48%); opacity: 100%}
-80% {clip-path: polygon(63% 34%, 52% 61%, 71% 74%, 45% 100%, 37% 100%, 34% 82%, 41% 48%);opacity: 40%}
-100% {clip-path: polygon(71% 18%, 51% 60%, 62% 80%, 46% 100%, 36% 100%, 46% 83%, 32% 49%); opacity: 30%}
+  0% {clip-path: polygon(36% 0, 44% 28%, 52% 59%, 43% 76%, 44% 100%, 30% 100%, 30% 84%, 56% 22%);; opacity: 30%}
+20%{clip-path: polygon(74% 21%, 44% 8%, 68% 39%, 86% 61%, 44% 100%, 30% 100%, 65% 82%, 69% 56%); opacity: 50%}
+40% {clip-path: polygon(46% 28%, 72% 3%, 46% 50%, 28% 72%, 44% 100%, 30% 100%, 32% 53%, 71% 40%);opacity: 80%}
+60% {clip-path: polygon(73% 23%, 59% 0, 65% 37%, 56% 68%, 44% 100%, 30% 100%, 57% 86%, 38% 51%); opacity: 100%}
+80% {clip-path: polygon(78% 1%, 37% 36%, 53% 70%, 23% 66%, 44% 100%, 30% 100%, 33% 79%, 50% 41%);opacity: 40%}
+100% {clip-path: polygon(36% 0, 44% 28%, 52% 59%, 43% 76%, 44% 100%, 30% 100%, 30% 84%, 56% 22%); opacity: 30%}
 }
 /* Grid layout */
 
