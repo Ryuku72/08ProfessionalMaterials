@@ -37,80 +37,9 @@
                 <div class="titleSeq3"></div>
                 <div class="titleSeq4"></div>
                 <div class="titleSeq5"></div>
-                <div class="titleSeq6"></div>
+                <div class="moon"></div>
                 <div class="imageSlide"></div>
             </div>
-            <!-- Full-width images with number and caption text -->
-            <!-- <div class="mySlides fade"> -->
-            <!-- <div class="numbertext">1 / 7</div> -->
-            <!-- <div class="overlay"> 
-      <img src="./assets/week1.jpg" class="imageSlide">
-        </div>
-       <div class="text">WEEK 1 \\ HORISEN</div> 
-    </div>
-  
-     <div class="mySlides fade">
-      <div class="numbertext">2 / 7</div>
-      <div class="overlay">
-      <img src="./assets/week2.jpg" class="imageSlide">
-      </div>
-       <div class="text">WEEK 2 \\ PORTFOLIO</div>
-    </div>
-  
-     <div class="mySlides fade">
-       <div class="numbertext">3 / 7</div>
-       <div class="overlay">
-      <img src="./assets/week3.jpg" class="imageSlide">
-      </div>
-       <div class="text">WEEK 3 \\ PASSWORD</div>
-    </div>
-
-     <div class="mySlides fade">
-        <div class="numbertext">4 / 7</div>
-        <div class="overlay">
-        <img src="./assets/week4.jpg" class="imageSlide">
-        </div>
-        <div class="text">WEEK 4 \\ QUIZ</div>
-      </div>
-
-    <div class="mySlides fade">
-        <div class="numbertext">5 / 7</div>
-        <div class="overlay">
-        <img src="./assets/week5.jpg" class="imageSlide">
-        </div>
-        <div class="text">WEEK 5 \\ PLANNER</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">6 / 7</div>
-        <div class="overlay">
-        <img src="./assets/week6.jpg" class="imageSlide">
-        </div>
-        <div class="text">WEEK 6 \\ WEATHER</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">7 / 7</div>
-        <div class="overlay">
-        <img src="./assets/week7.jpg" class="imageSlide">
-        </div>
-        <div class="text">WEEK 7 \\ API</div>
-      </div> -->
-
-            <!-- Next and previous buttons -->
-            <!-- <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
-    <button class="next" onclick="plusSlides(1)">&#10095;</button> -->
-
-            <!-- The dots/circles -->
-            <!-- <div class="dotSeq">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-      <span class="dot" onclick="currentSlide(4)"></span>
-      <span class="dot" onclick="currentSlide(5)"></span>
-      <span class="dot" onclick="currentSlide(6)"></span>
-      <span class="dot" onclick="currentSlide(7)"></span>
-  </div> -->
         </div>
 
     </nav>
@@ -209,6 +138,26 @@
             </footer>
         </div>
     </section>
+
+    <div class="popContainer">
+        <div class="popHeader">
+        <h1 >Hello there...</h1>
+        <button class="close-button" id="popupClose" tabindex="1">&times;</button>
+    </div>
+        <div class="popGrid">
+        <h3 id="labelName" class="popText">Name</h3>
+        <input type="text" class="popInput" tabindex="2" id="inputName" placeholder="John Doe">
+        <h3 id="labelEmail" class="popText">Email</h3>
+        <input type="subject" class="popInput" tabindex="3" id="inputEmail" placeholder="hello@world.com.au">
+        <h3 id="labelMessage" class="popText">Message</h3>
+        <textarea type="message" tabindex="4" id="inputMessage" placeholder="some positive"></textarea>
+        <div class="popImg">
+            <img src="./assets/211111EDIT.jpg" class="popImg">
+        </div>
+    </div>
+    <button type="submit" class="submitButton" tabindex="5" data-submit="...Sending">submit</button>
+    </div>
+    <div id="overlay"></div>
 
     <script src="./script.js"></script>
 </body>

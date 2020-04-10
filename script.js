@@ -39,4 +39,22 @@ $("#media").click(function(){
   $("#section").addClass("hide");
 })
 
+$("#contact").click(function(){
+  $(".popContainer").addClass("active");
+  $("#overlay").addClass("active");
+})
+$("#popupClose").click(function(){
+  $(".popContainer").removeClass("active");
+  $("#overlay").removeClass("active");
+})
+
+$(".submitButton").click(function(){
+  if ($(".popInput").val() == "") {
+    alert ("Please provide more information...")
+  } else {
+  $(".popContainer").removeClass("active");
+  $("#overlay").removeClass("active");
+  }
+})
+
 });
