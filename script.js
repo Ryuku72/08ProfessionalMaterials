@@ -50,7 +50,7 @@ $("#popupClose").click(function(){
 
 $(".submitButton").click(function(){
   if ($(".popInput").val() == "") {
-    alert ("Please provide more information...")
+    alert ("Please provide more information or press the close button")
   } else {
   $(".popContainer").removeClass("active");
   $("#overlay").removeClass("active");

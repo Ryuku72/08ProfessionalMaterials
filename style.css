@@ -126,7 +126,7 @@ body {
   justify-content: end;
 }
 
-#project {
+#home {
   z-index: 7;
   position: absolute;
   left: 5%;
@@ -140,10 +140,10 @@ body {
   border: none;
 }
 
-#media {
+#project {
   z-index: 7;
   position: absolute;
-  left: 20%;
+  left: 15%;
   bottom: 8%;
   font-family: 'Permanent Marker', cursive;
   font-size: 4vh;
@@ -157,7 +157,7 @@ body {
 #contact {
   z-index: 7;
   position: absolute;
-  left: 32%;
+  left: 28%;
   bottom: 8%;
   font-family: 'Permanent Marker', cursive;
   font-size: 4vh;
@@ -173,7 +173,7 @@ body {
   font-size: 3rem;
 }
 
-#media:hover {
+#home:hover {
   color: rgb(255, 234, 75);
   font-size: 3rem;
 }
@@ -656,9 +656,9 @@ footer p {
   transition: 200ms ease-in-out;
   padding: 1em;
   background-image: url("./assets/vectorbg.jpg");
-  background-position-x: 0em;
-  background-position-y: 10em;
-  background-size: 100%;
+  background-position-x: 50em;
+  background-position-y: 20em;
+  background-size: 120%;
 }
 
 .popContainer.active {
