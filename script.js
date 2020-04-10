@@ -35,7 +35,7 @@ $("#project").click(function(){
     'slow');
 })
 
-$("#media").click(function(){
+$("#home").click(function(){
   $("#section").addClass("hide");
 })
 

@@ -597,7 +597,7 @@ footer {
 footer p {
   font-family: 'Share Tech Mono', monospace;
   font-size: 1.5rem;
-  color: gold;
+  color: rgb(244, 141, 189);
   text-align: end;
   padding-right: 5vw;
 }
