@@ -972,19 +972,15 @@ footer p {
   cursor: pointer;
   background: none;
   border-radius: 10px;
-  font-size: 2rem;
+  font-size: 2.25rem;
   font-weight: bold;
   margin: 20px;
   width: 20%;
   height: 10%;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  color: rgb(210, 127, 226);
+  color: rgb(235, 169, 222);
   font-family: 'Schoolbell', cursive;
-  text-shadow: rgb(255, 255, 255) 2px 2px;
+  text-shadow: rgb(99, 99, 99) -3px -2px;
   letter-spacing: 0.3vw;
-  font-style: italic;
   position: absolute;
   bottom: 2%;
   left: 40%;
@@ -1026,7 +1022,7 @@ footer p {
   
   .submitButton:hover {
     color: palegreen;
-    font-size: 2.2em;
+    font-size: 2.3em;
   }
 
   .popInput:focus-within, #inputMessage:focus-within {
