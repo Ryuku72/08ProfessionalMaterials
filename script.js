@@ -31,7 +31,7 @@ $(document).ready(function(){
 $("#project").click(function(){
   $("#section").removeClass("hide");
   $('html,body').animate({
-    scrollTop: $(".week1").offset().top},
+    scrollTop: $("#week1").offset().top},
     'slow');
 })
 

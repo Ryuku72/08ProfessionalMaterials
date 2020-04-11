@@ -1,0 +1,196 @@
+/* PopUp */
+
+.popContainer {
+    position: fixed;
+    top: 42%;
+    left: 65%;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 20px;
+    z-index: 10;
+    background-color: white;
+    width: 60vw;
+    max-width: 50%;
+    height: 70vh;
+    max-height: 70%;
+    transition: 200ms ease-in-out;
+    background-image: url("./assets/computerPixelfinal.jpg");
+    background-repeat: none;
+    background-size: 100% 100%;
+    font-family: 'Schoolbell', cursive;
+  }
+  
+  .popContainer.active {
+    transform: translate(-50%, -50%);
+  }
+  
+  .popGrid {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    margin: 2em;
+    line-height: 0.8vh;
+  }
+  
+  .popHeader {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 2vw;
+    margin-bottom: -1em;
+  }
+  
+  
+  .popHeader p {
+    padding-left: 15px;
+    font-size: 4em;
+    color:rgb(242, 234, 120);
+    text-shadow: rgb(70, 70, 70) 3px 3px;
+    margin: 0.3em;
+  }
+  
+  .close-button {
+    cursor: pointer;
+    font-size: 2em;
+    outline: none;
+    background: none;
+    border: none;
+    position: absolute;
+    top: 0;
+    right:0.5em;
+  }
+  
+  #labelName,
+  #inputName,
+  #labelEmail,
+  #inputEmail,
+  #labelMessage,
+  #inputMessage {
+    grid-column: 1;
+  }
+  
+  .popText {
+    font-size:1.75em;
+    color: white;
+    text-shadow: black 2px 2px;
+    padding: 0;
+    margin: 0.5em;
+    text-align: start;
+  }
+  
+  .popInput {
+    height: 5vh;
+    width: 95%;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    padding: 1em;
+    opacity: 75%;
+    outline: none;
+  }
+  
+  #inputMessage {
+    height: 18vh;
+    width: 95%;
+    max-width: 95%;
+    resize: none;
+    border-radius: 10px;
+    padding: 0.3em 0.5em;
+    font-size: 1.25rem;
+    padding: 0.75em;
+    opacity: 75%;
+    outline: none;
+  }
+  
+  #overlay {
+    z-index: 9;
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(76, 60, 81);
+    pointer-events: none;
+    transition: 200ms ease-in-out;
+  }
+  
+  #overlay.active {
+    opacity: 0.8;
+    pointer-events: all;
+  }
+  
+  .submitButton {
+    cursor: pointer;
+    background: none;
+    border-radius: 10px;
+    font-size: 2.25rem;
+    font-weight: bold;
+    width: 20%;
+    height: 10%;
+    color: rgb(235, 169, 222);
+    font-family: 'Schoolbell', cursive;
+    text-shadow: rgb(99, 99, 99) -3px -2px;
+    letter-spacing: 0.3vw;
+    position: absolute;
+    bottom: 2%;
+    left: 40%;
+    outline: none;
+    border: none;
+    background: none;
+  }
+  
+  .typewriter {
+    position: absolute;
+    top: 40%;
+    right: 21%;
+    display: flex;
+    justify-content: start;
+    grid-column: 2;
+    grid-row: 4;
+    width: 6.5vw;
+    height: 1.5em;
+    line-height: 2vh;
+    margin-left: 5vw;
+  }
+  
+  .typewriter h1 {
+    font-size: 0.75em;
+      overflow: hidden; /* Ensures the content is not revealed until the animation */
+      border-right: .15em solid orange; /* The typwriter cursor */
+      white-space: nowrap; /* Keeps the content on a single line */
+      margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+      letter-spacing: .15em; /* Adjust as needed */
+      animation: 
+        typing 5s steps(40, end),
+        blink-caret .75s step-end infinite;
+    }
+   
+    /* Keyframes */
+
+    .close-button:hover {
+      color: red;
+      font-size: 2.5em;
+      transform: rotate(15deg);
+    }
+    
+    .submitButton:hover {
+      color: palegreen;
+      font-size: 2.3em;
+    }
+  
+    .popInput:focus-within, #inputMessage:focus-within {
+      opacity: 1;
+    }
+  
+    /* The typing effect */
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+    
+    /* The typewriter cursor effect */
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: orange; }
+    }
+  
