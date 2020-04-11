@@ -4,7 +4,7 @@
     z-index: 0;
     text-align: center;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 33% 33% 33%;
     grid-gap: 1vh;
     background-color: skyblue;
     border-top: 1vh solid skyblue;
