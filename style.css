@@ -80,51 +80,22 @@ body {
 }
 
 .buttonSeq {
-  display: flex;
+  position: absolute;
+  bottom: 5%;
+  left: 8%;
+  z-index: 7;
+}
+
+.titleButton{
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2.5em;
+  padding: 2rem;
+  color: white;
+  text-shadow: black 5px 5px;
+  background-color: transparent;
+  outline: none;
+  border: none;
   flex-direction: row;
-  justify-content: end;
-}
-
-#home {
-  z-index: 7;
-  position: absolute;
-  left: 6%;
-  bottom: 8%;
-  font-family: 'Permanent Marker', cursive;
-  font-size: 2.5rem;
-  color: white;
-  text-shadow: black 5px 5px;
-  background-color: transparent;
-  outline: none;
-  border: none;
-}
-
-#project {
-  z-index: 7;
-  position: absolute;
-  left: 16%;
-  bottom: 8%;
-  font-family: 'Permanent Marker', cursive;
-  font-size: 2.5rem;
-  color: white;
-  text-shadow: black 5px 5px;
-  background-color: transparent;
-  outline: none;
-  border: none;
-}
-
-#contact {
-  z-index: 7;
-  position: absolute;
-  left: 29%;
-  bottom: 8%;
-  font-family: 'Permanent Marker', cursive;
-  font-size: 2.5rem;
-  color: white;
-  text-shadow: black 5px 5px;
-  background-color: transparent;
-  outline: none;
-  border: none;
 }
 
 #project:hover {

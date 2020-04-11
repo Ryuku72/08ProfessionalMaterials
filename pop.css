@@ -9,9 +9,9 @@
     z-index: 10;
     background-color: white;
     width: 60vw;
-    max-width: 50%;
+    max-width: 60%;
     height: 70vh;
-    max-height: 70%;
+    max-height: 80%;
     transition: 200ms ease-in-out;
     background-image: url("./assets/computerPixelfinal.jpg");
     background-repeat: none;
@@ -28,7 +28,7 @@
     grid-template-columns: 55% 45%;
     grid-template-rows: auto;
     grid-gap: 10px;
-    margin: 2em;
+    margin-left: 2em;
     line-height: 0.8vh;
   }
   
@@ -37,7 +37,7 @@
     width: 100%;
     justify-content: space-between;
     padding-left: 2vw;
-    margin-bottom: -1em;
+    margin-bottom: 0em;
   }
   
   
@@ -58,6 +58,7 @@
     position: absolute;
     top: 0;
     right:0.5em;
+    margin: 0;
   }
   
   #labelName,
@@ -89,9 +90,10 @@
   }
   
   #inputMessage {
-    height: 18vh;
+    height: 30vh;
     width: 95%;
     max-width: 95%;
+    max-height: 70%;
     resize: none;
     border-radius: 10px;
     padding: 0.3em 0.5em;

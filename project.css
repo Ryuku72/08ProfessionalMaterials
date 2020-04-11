@@ -11,9 +11,6 @@
     grid-template-rows: repeat(6, 45vh);
 }
 
-/* .imgPort {
-} */
-
 .textPanel{
     padding: 2vh 0;
     margin: 0.1em;
@@ -25,7 +22,7 @@
     padding-left: 3vw;
 }
 
-#week3, #week4 {
+#week1, #week3, #week4 {
     text-align: center;
     padding-right: 3vw;
 }
