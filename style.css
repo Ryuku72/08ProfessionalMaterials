@@ -149,7 +149,7 @@ body {
   clip-path: polygon(48% 5%, 49% 43%, 57% 61%, 45% 90%, 25% 100%, 43% 69%, 24% 61%);
   -webkit-clip-path: polygon(48% 5%, 49% 43%, 57% 61%, 45% 90%, 25% 100%, 43% 69%, 24% 61%);
   animation: smoke 16s infinite;
-  animation-delay: 12s;
+  animation-delay: 10s;
   opacity: 0;
 }
 
