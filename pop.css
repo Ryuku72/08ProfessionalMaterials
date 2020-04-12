@@ -98,8 +98,8 @@ body {
   }
   
   #inputMessage {
-    height: 12em;
-    max-height: 15em;
+    height: 10em;
+    max-height: 10em;
     resize: none;
     width: 95%;
     font-size: 1.25rem;
@@ -121,7 +121,7 @@ body {
     cursor: pointer;
     background: none;
     border-radius: 10px;
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: bold;
     width: 20%;
     height: 10%;
@@ -161,13 +161,14 @@ body {
     justify-content: start;
     grid-column: 2;
     grid-row: 4;
-    width: 5em;
+    width: 6em;
     height: 0.6em;
     line-height: 0.75em;
   }
   
   .typewriter h1 {
-    font-size: 0.5em;
+    padding-left: 30px;
+    font-size: 0.35em;
       overflow: hidden; /* Ensures the content is not revealed until the animation */
       border-right: .1em solid orange; /* The typwriter cursor */
       white-space: nowrap; /* Keeps the content on a single line */
