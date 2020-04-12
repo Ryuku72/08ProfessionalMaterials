@@ -124,7 +124,8 @@
     grid-column: 2;
     grid-row: 4;
     background-image: url("./assets/week5.jpg");  
-    background-size: 175% 100%;
+    background-size: 215% 185%;
+    background-position: 100% 50%;
     background-repeat: no-repeat;
     clip-path: polygon(13% 49%, 0 31%, 0 0, 100% 0, 100% 100%, 48% 100%, 0 100%, 0 67%);
     -webkit-clip-path: polygon(13% 49%, 0 31%, 0 0, 100% 0, 100% 100%, 48% 100%, 0 100%, 0 67%);
@@ -146,9 +147,9 @@
     grid-column: 2;
     grid-row: 6;
     background-image: url("./assets/week7.jpg");  
-    background-size: 300% 100%;
+    background-size: 180% 150%;
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: 50% 10%;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 18% 100%, 0 60%);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 18% 100%, 0 60%);
 }
@@ -268,11 +269,18 @@ footer p {
 }
 
 .fa {
-    padding: 20px;
-    width: 5vw;
-    text-align: center;
+    padding: 10px;
+    width: 20%;
+    height: 10%;
     text-decoration: none;
     border-radius: 20px;
+}
+
+/* Icon size */
+.portfolio a {
+    font-size: 3rem;
+    text-align: center;
+    padding: 1.2rem;
 }
 
 .fa-twitter {
@@ -295,3 +303,101 @@ footer p {
     background-color: orange;
 }
 
+/* Tooltips */
+
+.tooltip {
+position: relative;
+display: inline-block;
+border-bottom: 1px dotted black;
+}
+
+.tooltiptext {
+    position: absolute;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
+    z-index: 1;
+    width: 15vw;
+    color: #fff;
+    border-radius: 16px;
+    padding: 15px;
+    font-size: 1.5em;
+}
+
+.tooltip:hover .tooltiptext{
+    visibility: visible;
+    opacity: 1;
+}
+
+.text1 {
+    top: 60%;
+    left: 10%;
+    background: rgba(29, 106, 154, 0.72);
+    text-align: start;
+}
+
+
+
+.text2 {
+    top: 20%;
+    right: 10%;
+    background: rgba(182, 64, 145, 0.72);
+    text-align: center;
+}
+
+.text3 {
+    top: 25%;
+    left: 5%;
+    background: rgba(85, 255, 0, 0.72);
+    text-align: start;
+    width: 20%;
+    height: 55%
+}
+
+.text3::after {
+    content: " ";
+    position: absolute;
+    /* At the bottom of the tooltip */
+    left: 100%;
+    top: 75%;
+    border-width: 15px;
+    border-style: solid;
+    border-color: transparent  transparent transparent rgba(85, 255, 0, 0.72);
+  }
+
+.text4 {
+    top: 10%;
+    left: 4%;
+    background: white;
+    text-align: start;
+    color: black;
+}
+
+.text5 {
+    top: 15%;
+    right: 5%;
+    background: rgba(251, 255, 0, 0.72);
+    text-align: start;
+    color: black;
+    width: 35%;
+    height: 40%;
+}
+
+.text6 {
+    top: 10%;
+    right: 5%;
+    background:rgb(255, 255, 255);
+    text-align: start;
+    text-align: center;
+    opacity: 0.5;
+    color: black;
+}
+
+.text7 {
+    top: 15%;
+    left: 8%;
+    background: rgba(80, 157, 245, 0.639);
+    text-align: start;
+    width: 55%;
+}
