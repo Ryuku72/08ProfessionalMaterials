@@ -1,3 +1,9 @@
+body {
+    margin: 0;
+    -ms-overflow-style: none;
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+  }
 
 /*Grid Layout */
 #section-container {
@@ -8,13 +14,12 @@
     grid-gap: 1vh;
     background-color: skyblue;
     border-top: 1vh solid skyblue;
-    grid-template-rows: repeat(6, 45vh);
+    grid-template-rows: repeat(6, 15em);
 }
 
 .textPanel{
     padding: 2vh 0;
     margin: 0.1em;
-    line-height: 2em;
     background-color: snow;
     width: 100%;
     height: 100%;
@@ -321,8 +326,9 @@ border-bottom: 1px dotted black;
     width: 15vw;
     color: #fff;
     border-radius: 16px;
-    padding: 15px;
-    font-size: 1.5em;
+    padding: 0.75em;
+    font-size: 0.75em;
+    margin: 0;
 }
 
 .tooltip:hover .tooltiptext{
@@ -332,27 +338,28 @@ border-bottom: 1px dotted black;
 
 .text1 {
     top: 60%;
-    left: 10%;
+    left: 5%;
+    width: 60%;
     background: rgba(29, 106, 154, 0.72);
     text-align: start;
 }
 
-
-
 .text2 {
-    top: 20%;
-    right: 10%;
+    top: 15%;
+    right: 8%;
+    width: 40%;
     background: rgba(182, 64, 145, 0.72);
-    text-align: center;
+    text-align: end;
 }
 
 .text3 {
-    top: 25%;
+    top: 20%;
     left: 5%;
     background: rgba(85, 255, 0, 0.72);
-    text-align: start;
-    width: 20%;
-    height: 55%
+    text-align: center;
+    width: 23%;
+    height: 67%;
+    
 }
 
 .text3::after {
@@ -360,7 +367,7 @@ border-bottom: 1px dotted black;
     position: absolute;
     /* At the bottom of the tooltip */
     left: 100%;
-    top: 75%;
+    top: 70%;
     border-width: 15px;
     border-style: solid;
     border-color: transparent  transparent transparent rgba(85, 255, 0, 0.72);
@@ -395,7 +402,7 @@ border-bottom: 1px dotted black;
 }
 
 .text7 {
-    top: 15%;
+    top: 8%;
     left: 8%;
     background: rgba(80, 157, 245, 0.639);
     text-align: start;

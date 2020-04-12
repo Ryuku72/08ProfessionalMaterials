@@ -22,7 +22,7 @@ $("#popupClose").click(function(){
 
 $(".submitButton").click(function(){
   if ($(".popInput").val() == "") {
-    alert ("Please provide more information or press the close button")
+    alert ("Please fill in all the boxes.\nTo exit click the 'X' button")
   } else {
   $(".popContainer").removeClass("active");
   $("#overlay").removeClass("active");
