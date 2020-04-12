@@ -10,8 +10,8 @@ body {
     z-index: 0;
     text-align: center;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: 35em;
     grid-gap: 0.35em;
     background-color: skyblue;
     border-top: 0.35em solid skyblue;
