@@ -133,9 +133,8 @@ body::-webkit-scrollbar {
   background-color: rgb(147, 88, 0);
   clip-path: polygon(48% 1%, 0 65%, 18% 66%, 20% 100%, 40% 100%, 39% 80%, 53% 78%, 53% 100%, 72% 100%, 87% 100%, 87% 69%, 100% 67%, 85% 42%, 91% 26%, 79% 15%, 73% 26%);
   -webkit-clip-path: polygon(48% 1%, 0 65%, 18% 66%, 20% 100%, 40% 100%, 39% 80%, 53% 78%, 53% 100%, 72% 100%, 87% 100%, 87% 69%, 100% 67%, 85% 42%, 91% 26%, 79% 15%, 73% 26%);
-  animation: house 2s forwards;
-  animation-delay: 8s;
-  opacity: 0;
+  animation: house 14s forwards;
+  opacity: 1;
   border-bottom: rgb(18, 52, 18) double 1vh;
 }
 
@@ -150,9 +149,9 @@ body::-webkit-scrollbar {
   clip-path: polygon(48% 5%, 49% 43%, 57% 61%, 45% 90%, 25% 100%, 43% 69%, 24% 61%);
   -webkit-clip-path: polygon(48% 5%, 49% 43%, 57% 61%, 45% 90%, 25% 100%, 43% 69%, 24% 61%);
   animation: smoke 16s infinite;
-  animation-delay: 10s;
   opacity: 0;
-  transform: rotateY(12%);
+  animation-delay: 12s;
+  -webkit-animation-delay: 12000ms;
 }
 
 .titleSeq1 {
@@ -328,13 +327,13 @@ body::-webkit-scrollbar {
 
 @keyframes house {
   0% {
-    opacity: 20%;
+    opacity: 0%;
     -webkit-filter: opacity(0.2);
   }
 
   50% {
-    opacity: 50%;
-    -webkit-filter: opacity(0.5);
+    opacity: 0%;
+    -webkit-filter: opacity(0);
   }
 
   100% {
@@ -361,21 +360,22 @@ body::-webkit-scrollbar {
   40% {
     clip-path: polygon(68% 17%, 55% 10%, 60% 0, 44% 0, 44% 15%, 35% 21%, 47% 28%, 44% 39%, 48% 66%, 35% 100%, 33% 57%, 38% 50%);
     -webkit-clip-path: polygon(68% 17%, 55% 10%, 60% 0, 44% 0, 44% 15%, 35% 21%, 47% 28%, 44% 39%, 48% 66%, 35% 100%, 33% 57%, 38% 50%);
-    opacity: 80%;
+    opacity: 30%;
+    -webkit-filter: opacity(0.3);
   }
 
   60% {
     clip-path: polygon(58% 30%, 34% 33%, 17% 21%, 44% 0, 26% 4%, 29% 23%, 47% 28%, 44% 39%, 61% 70%, 35% 100%, 51% 64%, 43% 50%);
     -webkit-clip-path: polygon(58% 30%, 34% 33%, 17% 21%, 44% 0, 26% 4%, 29% 23%, 47% 28%, 44% 39%, 61% 70%, 35% 100%, 51% 64%, 43% 50%);
-    -webkit-filter: opacity(1);
-    opacity: 100%;
+    -webkit-filter: opacity(0.6);
+    opacity: 60%;
   }
 
   80% {
     clip-path: polygon(69% 32%, 48% 30%, 43% 23%, 72% 0, 56% 0, 46% 15%, 62% 23%, 57% 36%, 67% 50%, 35% 100%, 61% 80%, 49% 47%);
     -webkit-clip-path: polygon(69% 32%, 48% 30%, 43% 23%, 72% 0, 56% 0, 46% 15%, 62% 23%, 57% 36%, 67% 50%, 35% 100%, 61% 80%, 49% 47%);
-    opacity: 60%;
-    -webkit-filter: opacity(0.6);
+    opacity: 35%;
+    -webkit-filter: opacity(0.35);
   }
 
   100% {

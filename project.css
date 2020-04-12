@@ -18,47 +18,51 @@ body {
 }
 
 .textPanel{
-    padding: 2vh 0;
+    padding: 1.25em 2.5em;
     margin: 0.1em;
     background-color: snow;
     width: 100%;
     height: 100%;
     text-align: start;
-    padding-left: 3vw;
 }
 
-#week1, #week3, #week4 {
+#week3, #week4 {
     text-align: center;
-    padding-right: 3vw;
 }
 
 #week7 {
     text-align: right;
-    padding-right: 5vw;
 }
 
 .wtitle {
     font-family: 'Permanent Marker', cursive;
-    font-size: 5vh;
+    font-size: 1.5em;
+    line-height: 0.5em;
 }
 
 .description {
     font-family: monospace;
-    font-size: 4vh;
+    font-size: 1.4em;
+    line-height: 0.75em;
 }
 
 .commit {
-    font-size: 3vh;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1em;
 }
 
 #section-container button {
-    font-family: 'Permanent Marker', cursive;
-    height: 6vh;
-    font-size: 3vh;
+    font-family: 'Schoolbell', cursive;
+    height: 2.5em;
+    font-size: 0.75em;
+    letter-spacing: 0.15em;
     color: white;
     background-color: purple;
     border-radius: 10px;
+    margin: 3px;
     text-decoration: none;
+    padding: 0.5em 0.75em;
+    
 }
 
 #section-container button:hover {
