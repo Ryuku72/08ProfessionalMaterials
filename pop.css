@@ -15,10 +15,10 @@ body {
     border-radius: 20px;
     z-index: 10;
     background-color: white;
-    width: 60vw;
-    max-width: 60%;
-    height: 70vh;
-    max-height: 80%;
+    width: 60%;
+    max-width: 40em;
+    height: 70%;
+    max-height: 35em;
     transition: 200ms ease-in-out;
     background-image: url("./assets/computerPixelfinal.jpg");
     background-repeat: none;
@@ -98,9 +98,8 @@ body {
   }
   
   #inputMessage {
-    height: 40vh;
-    max-width: 95%;
-    max-height: 50%;
+    height: 12em;
+    max-height: 15em;
     resize: none;
     width: 95%;
     font-size: 1.25rem;
@@ -129,7 +128,7 @@ body {
     color: rgb(137, 221, 88);
     font-family: 'Schoolbell', cursive;
     text-shadow: rgb(84, 84, 84) 3px 2px;
-    letter-spacing: 0.2vw;
+    letter-spacing: 0.15em;
     outline: none;
     border: none;
     background: none;
@@ -162,10 +161,9 @@ body {
     justify-content: start;
     grid-column: 2;
     grid-row: 4;
-    width: 7vw;
+    width: 5em;
     height: 0.6em;
-    line-height: 2vh;
-    margin-left: 5vw;
+    line-height: 0.75em;
   }
   
   .typewriter h1 {

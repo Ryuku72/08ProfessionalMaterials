@@ -10,10 +10,11 @@ body {
     z-index: 0;
     text-align: center;
     display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-gap: 1vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 0.35em;
     background-color: skyblue;
-    border-top: 1vh solid skyblue;
+    border-top: 0.35em solid skyblue;
     grid-template-rows: repeat(6, 15em);
 }
 
@@ -267,7 +268,7 @@ footer p {
     font-size: 1.5rem;
     color: rgb(244, 141, 189);
     text-align: end;
-    padding-right: 5vw;
+    padding-right: 3em;
 }
 
 
@@ -327,7 +328,7 @@ border-bottom: 1px dotted black;
     opacity: 0;
     transition: opacity .2s, visibility .2s;
     z-index: 1;
-    width: 15vw;
+    width: 8.5em;
     color: #fff;
     border-radius: 16px;
     padding: 0.75em;
@@ -358,10 +359,10 @@ border-bottom: 1px dotted black;
 
 .text3 {
     top: 20%;
-    left: 5%;
+    left: 3%;
     background: rgba(85, 255, 0, 0.72);
-    text-align: center;
-    width: 23%;
+    text-align: start;
+    width: 25%;
     height: 67%;
     
 }
@@ -400,7 +401,7 @@ border-bottom: 1px dotted black;
     right: 5%;
     background:rgb(255, 255, 255);
     text-align: start;
-    text-align: center;
+    text-align: end;
     opacity: 0.5;
     color: black;
 }
