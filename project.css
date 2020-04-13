@@ -3,9 +3,11 @@
     z-index: 0;
     text-align: center;
     display: grid;
-    grid-template-columns: 33% 34% 33%;
-    grid-template-rows: 35em;
-    grid-gap: 0.25em;
+    grid-template-columns: repeat(auto-fill, minmax(16.4em, 1fr));
+    column-count: 3;
+    column-gap: 0.35em;
+    grid-template-rows: repeat(auto-fill, minmax(12em, 1fr));
+    row-gap: 0.35em;
     background-color: skyblue;
     border-top: 0.35em solid skyblue;
     grid-template-rows: repeat(6, 15em);
@@ -13,42 +15,28 @@
     -ms-overflow-style: none;
     font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
     line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+    object-fit: cover;
 }
 
 .textPanel{
-    padding: 1.5em 2em;
-    margin: 0.2em;
     background-color: rgb(228, 228, 228);
-    width: 100%;
-    height: 100%;
-    flex-direction: column;
-}
-
-#week3, #week4 {
-    text-align: center;
-}
-
-#week7 {
-    text-align: right;
+    padding-top: 1.25em;
+    line-height: 1em;
 }
 
 .wtitle {
     font-family: 'Permanent Marker', cursive;
     font-size: 1.5em;
-    line-height: 1em;
 }
 
 .description {
     font-family: monospace;
     font-size: 1.25em;
-    line-height: 1.2em;
 }
 
 .commit {
     font-family: 'Share Tech Mono', monospace;
     font-size: 1em;
-    line-height: 1.2em;
-    margin:0.5em;
 }
 
 #section-container button {
@@ -59,20 +47,14 @@
     color: white;
     background-color: purple;
     border-radius: 10px;
-    margin: 0.25em;
+    margin-right: 0.5em;
     text-decoration: none;
-    padding: 0.5em 0.75em;
+    padding: 0.75em 0.75em;
 }
 
 #section-container button:hover {
     opacity: 0.7;
     background-color: rgb(97, 162, 97);
-}
-
-.mod {
-    color: orange;
-    font-family: monospace;
-    font-size: 1.2em;
 }
 
 /*Img Panels */
@@ -221,6 +203,20 @@
     -webkit-clip-path: polygon(100% 0, 100% 100%, 77% 100%, 57% 89%, 38% 100%, 0 100%, 0 0);
 }
 
+#week1, #week3, #week6 {
+    text-align: center;
+}
+
+#week2, #week5 {
+    text-align: start;
+    padding-left: 2.5em;
+}
+
+#week4, #week7 {
+    text-align: end;
+    padding-right: 2.5em;
+}
+
 /* Extra Panels */
 
 .portfolio {
@@ -233,7 +229,7 @@
     font-family: 'Permanent Marker', cursive;
     font-size: 2.5em;
     text-align: end;
-    padding: 0em 1.2em;
+    padding-right: 1.25em;
     line-height: 1em;
 }
 
@@ -397,9 +393,8 @@ border-bottom: 1px dotted black;
 .text6 {
     top: 16%;
     right: 5%;
-    width: 65%;
+    width: 45%;
     background:rgb(255, 255, 255);
-    text-align: start;
     text-align: end;
     opacity: 0.5;
     color: black;
