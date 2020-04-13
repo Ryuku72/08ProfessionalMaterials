@@ -1,5 +1,4 @@
 /* Slideshow container */
-
 *,
 *::before,
 *::after {
@@ -33,31 +32,37 @@ body::-webkit-scrollbar {
 }
 
 /* Text */
+.slideText {
+  position: absolute;
+  top: 0;
+  right: 3.25em;
+  z-index: 8;
+  line-height: 0.15em;
+  text-align: end;
+  margin: 0em;
+}
+
 .titleText {
   font-family: 'Permanent Marker', cursive;
   color: white;
   text-shadow: black 5px 5px;
   z-index: 8;
+  flex-direction: column;
 }
 
 #hello {
-  position: absolute;
-  font-size: 4.5em;
-  right: 5%;
+  font-size: 3.5em;
+  margin: 1.25em 0.75em;
 }
 
 #name1 {
-  position: absolute;
   font-size: 8.5em;
-  top: 8%;
-  right: 2%;
+  margin:0.65em 0em;
 }
 
 #name2 {
-  position: absolute;
   font-size: 8.5em;
-  right: 7%;
-  top: 32%;
+  margin: 0.85em 0em;
 }
 
 /* Title Buttons */
@@ -115,36 +120,6 @@ body::-webkit-scrollbar {
   height: 100%;
 }
 
-.house {
-  z-index: 7;
-  position: absolute;
-  width: 4.2em;
-  height: 4.5em;
-  bottom: 4%;
-  right: 22%;
-  background-color: rgb(147, 88, 0);
-  clip-path: polygon(48% 1%, 0 65%, 18% 66%, 20% 100%, 40% 100%, 39% 80%, 53% 78%, 53% 100%, 72% 100%, 87% 100%, 87% 69%, 100% 67%, 85% 42%, 91% 26%, 79% 15%, 73% 26%);
-  -webkit-clip-path: polygon(48% 1%, 0 65%, 18% 66%, 20% 100%, 40% 100%, 39% 80%, 53% 78%, 53% 100%, 72% 100%, 87% 100%, 87% 69%, 100% 67%, 85% 42%, 91% 26%, 79% 15%, 73% 26%);
-  animation: house 14s forwards;
-  opacity: 1;
-  border-bottom: rgb(18, 52, 18) double 0.3em;
-}
-
-.smoke {
-  z-index: 6;
-  position: absolute;
-  width: 6.5em;
-  height: 20em;
-  bottom: 15.5%;
-  right: 16.5%;
-  background-color: grey;
-  clip-path: polygon(30% 28%, 38% 12%, 56% 0, 70% 0, 45% 18%, 61% 13%, 53% 30%, 62% 44%, 44% 66%, 35% 100%, 39% 53%, 38% 37%);
-  -webkit-clip-path: polygon(30% 28%, 38% 12%, 56% 0, 70% 0, 45% 18%, 61% 13%, 53% 30%, 62% 44%, 44% 66%, 35% 100%, 39% 53%, 38% 37%);
-  animation: smoke 12s infinite;
-  animation-delay: 12s;
-  opacity: 0;
-}
-
 .titleSeq1 {
   position: absolute;
   z-index: 5;
@@ -197,6 +172,8 @@ body::-webkit-scrollbar {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
+
+/* Extra Elements */
 .moon {
   position: absolute;
   z-index: 1;
@@ -209,6 +186,37 @@ body::-webkit-scrollbar {
   opacity: 1;
   animation: 12s moon;
   animation-fill-mode: forwards;
+}
+
+.house {
+  z-index: 7;
+  position: absolute;
+  width: 4.2em;
+  height: 4.5em;
+  bottom: 4%;
+  right: 22%;
+  background-color: rgb(147, 88, 0);
+  clip-path: polygon(48% 1%, 0 65%, 18% 66%, 20% 100%, 40% 100%, 39% 80%, 53% 78%, 53% 100%, 72% 100%, 87% 100%, 87% 69%, 100% 67%, 85% 42%, 91% 26%, 79% 15%, 73% 26%);
+  -webkit-clip-path: polygon(48% 1%, 0 65%, 18% 66%, 20% 100%, 40% 100%, 39% 80%, 53% 78%, 53% 100%, 72% 100%, 87% 100%, 87% 69%, 100% 67%, 85% 42%, 91% 26%, 79% 15%, 73% 26%);
+  animation: house 14s forwards;
+  opacity: 1;
+  border-bottom: rgb(18, 52, 18) double 0.3em;
+}
+
+.smoke {
+  z-index: 6;
+  position: absolute;
+  width: 6.5em;
+  height: 20em;
+  bottom: 15.5%;
+  right: 16.5%;
+  background-color: grey;
+  clip-path: polygon(30% 28%, 38% 12%, 56% 0, 70% 0, 45% 18%, 61% 13%, 53% 30%, 62% 44%, 44% 66%, 35% 100%, 39% 53%, 38% 37%);
+  -webkit-clip-path: polygon(30% 28%, 38% 12%, 56% 0, 70% 0, 45% 18%, 61% 13%, 53% 30%, 62% 44%, 44% 66%, 35% 100%, 39% 53%, 38% 37%);
+  animation: smoke 12s infinite;
+  animation-delay: 12s;
+  -webkit-animation-delay: 12s;
+  opacity: 0;
 }
 
 /* Keyframes  */
@@ -395,4 +403,58 @@ body::-webkit-scrollbar {
     opacity: 1;
     -webkit-filter: opacity(1);
   }
+}
+
+
+/*media queries */
+@media screen and (max-width: 1020px){
+  #hello {
+    font-size: 3.5em;
+    margin: 1.55em 0.75em;
+  }
+  
+  #name1 {
+    font-size: 6.5em;
+    margin:1em 0em;
+  }
+  
+  #name2 {
+    font-size: 6.5em;
+    margin: 1.2em 0em;
+  }
+}
+
+@media screen and (max-height: 812px) and (orientation: landscape) {
+  #hello {
+    font-size: 2.5em;
+    margin: 1em 0.75em;
+  }
+  
+  #name1 {
+    font-size: 4.5em;
+    margin:0.75em 0em;
+  }
+  
+  #name2 {
+    font-size: 4.5em;
+    margin: 0.95em 0.25em;
+  }
+
+  .smoke {
+    right: 14.5%;
+  }
+}
+
+@media only screen and (min-device-width: 375px) 
+and (max-device-width: 812px) 
+and (-webkit-min-device-pixel-ratio: 3)
+and (orientation: portrait) {
+
+  .smoke {
+  bottom: 7%;
+  right: 10%;
+  height: 1600px;
+  width: 20%;
+}
+
 }

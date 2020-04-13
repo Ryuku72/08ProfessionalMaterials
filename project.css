@@ -220,6 +220,7 @@
 /* Extra Panels */
 
 .portfolio {
+    position: relative;
     background-color: rgb(240, 92, 92);
     color: rgb(0, 0, 0);
     grid-column: 3;
@@ -229,22 +230,23 @@
     font-family: 'Permanent Marker', cursive;
     font-size: 2.5em;
     text-align: end;
-    padding-right: 1.25em;
+    padding: 0.2em 0.3em;
+    padding-right: 0.5em;
     line-height: 1em;
 }
 
 .message {
     color: white;
     font-family: 'Permanent Marker', cursive;
-    font-size: 1.6em;
+    font-size: 1.45em;
     text-align: start;
-    padding: 0.75em 1em;
+    padding: 1.85em 0.6em;
     clip-path: polygon(50% 0%, 100% 0, 100% 77%, 72% 100%, 49% 83%, 31% 100%, 15% 100%, 8% 100%, 0 100%, 0 0);
     -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 77%, 72% 100%, 49% 83%, 31% 100%, 15% 100%, 8% 100%, 0 100%, 0 0);
     background-color: rgb(87, 155, 87);
     grid-column: 1;
     grid-row: 5 / 7;
-    line-height: 1.8em;
+    line-height: 1.65em;
 }
 
 footer {
@@ -272,19 +274,25 @@ footer p {
     display: none;
 }
 
+.socialMedia {
+    flex-direction: row;
+    position: absolute;
+    bottom: 12%;
+    left: 12%;
+}
+
 .fa {
     padding: 0.2em;
-    width: 20%;
-    height: 10%;
+    width: 2em;
     text-decoration: none;
     border-radius: 20px;
 }
 
 /* Icon size */
 .portfolio a {
-    font-size: 3rem;
+    font-size: 1em;
     text-align: center;
-    padding: 1.2rem;
+    padding: 0.5em;
 }
 
 .fa-twitter {
@@ -358,7 +366,6 @@ border-bottom: 1px dotted black;
     text-align: start;
     width: 25%;
     height: 67%;
-    
 }
 
 .text3::after {
@@ -406,4 +413,95 @@ border-bottom: 1px dotted black;
     background: rgba(80, 157, 245, 0.639);
     text-align: start;
     width: 55%;
+}
+
+/*media queries */
+@media screen and (max-width: 1400px){
+
+    .portfolio {
+        font-size: 2.2em;
+        line-height: 1.2em;
+        padding-right: 0.75em;
+    }
+
+    .portfolio a {
+        font-size: 0.75em;
+        line-height: 1em;
+    }
+
+    .wtitle{
+        font-size: 1.2em;
+    }
+
+    .description {
+        font-size: 1.2em;
+    }
+
+    .commit {
+        font-size: 0.75em;
+    }
+
+    #section-container button {
+        font-size: 0.65em;
+        width: 5.5em;
+        line-height: 0.8em;
+    }
+
+}
+
+@media screen and (max-width: 1000px){
+
+    .portfolio {
+        font-size: 1.85em;
+        line-height: 1.25em;
+        padding-right: 1em;
+    }
+
+    .socialMedia{
+        bottom: 8%;
+    }
+
+    .fa {
+        padding: 0.2em;
+        width: 2.25em;
+        text-decoration: none;
+        border-radius: 20px;
+    }
+    .portfolio a {
+        font-size: 0.75em;
+        text-align: center;
+        padding: 0.5em;
+    }
+
+    .wtitle{
+        font-size: 1.2em;
+    }
+
+    .description {
+        font-size: 1.2em;
+    }
+
+    .commit {
+        font-size: 0.75em;
+    }
+
+    #section-container button {
+        padding: 0.25em;
+    }
+    
+    .message {
+        padding: 1em 1em;
+        font-size: 1.3em;
+    }
+    
+    #week2, #week5 {
+        text-align: start;
+        padding-left: 1em;
+    }
+    
+    #week4, #week7 {
+        text-align: end;
+        padding-right: 1em;
+    }
+
 }
