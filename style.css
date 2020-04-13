@@ -424,8 +424,11 @@ body::-webkit-scrollbar {
   }
 }
 
-@media screen and (max-height: 812px) and (orientation: landscape) {
-  #hello {
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 812px) 
+and (-webkit-min-device-pixel-ratio: 3)
+and (orientation: landscape)  {  #hello {
     font-size: 2.5em;
     margin: 1em 0.75em;
   }
@@ -442,6 +445,10 @@ body::-webkit-scrollbar {
 
   .smoke {
     right: 14.5%;
+  }
+
+  .titleButton{ 
+  font-size: 1.25em;
   }
 }
 
