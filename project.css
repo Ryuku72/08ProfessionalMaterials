@@ -290,9 +290,9 @@ footer p {
 
 /* Icon size */
 .portfolio a {
-    font-size: 1em;
+    font-size: 0.75em;
     text-align: center;
-    padding: 0.5em;
+    padding: 0.25em;
 }
 
 .fa-twitter {
