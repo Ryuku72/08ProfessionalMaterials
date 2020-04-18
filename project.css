@@ -3,7 +3,7 @@
     z-index: 0;
     text-align: center;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(16.4em, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(18.4em, 1fr));
     column-count: 3;
     column-gap: 0.35em;
     grid-template-rows: repeat(auto-fill, minmax(12em, 1fr));
