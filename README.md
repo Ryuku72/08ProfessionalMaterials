@@ -1,6 +1,6 @@
-![GitHub last commit](https://img.shields.io/github/last-commit/Ryuku72/02ResponsivePortfolio?style=for-the-badge)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/y/Ryuku72/02ResponsivePortfolio?style=for-the-badge)
-![GitHub contributors](https://img.shields.io/github/contributors/Ryuku72/02ResponsivePortfolio?style=for-the-badge)
+![GitHub last commit](https://img.shields.io/github/last-commit/Ryuku72/08ProfessionalMaterials?style=for-the-badge)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/y/Ryuku72/08ProfessionalMaterialso?style=for-the-badge)
+![GitHub contributors](https://img.shields.io/github/contributors/Ryuku72/08ProfessionalMaterials?style=for-the-badge)
 
 # Professional Materials
 __Project08: 14 APR 2020__
