@@ -31,6 +31,25 @@ body {
   transform: translate(-50%, -50%);
 }
 
+#overlay {
+  z-index: 9;
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(76, 60, 81);
+  pointer-events: none;
+  transition: 200ms ease-in-out;
+}
+
+#overlay.active {
+  opacity: 0.8;
+  pointer-events: all;
+}
+
+
 /* Header */
 .popHeader {
   display: flex;
@@ -135,23 +154,7 @@ body {
   text-align: end;
 }
 
-#overlay {
-  z-index: 9;
-  position: fixed;
-  opacity: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgb(76, 60, 81);
-  pointer-events: none;
-  transition: 200ms ease-in-out;
-}
 
-#overlay.active {
-  opacity: 0.8;
-  pointer-events: all;
-}
 
 .typewriter {
   position: absolute;
